@@ -1,0 +1,138 @@
+header{
+	display:flex;
+	flex-direction:row;
+	text-align:center;
+	position:absolute;
+    z-index:5;
+
+    min-height:90px;
+	max-height:9vh;
+	width:100%;
+	float:top;
+
+    padding:auto;
+	justify-content: space-evenly;
+	align-items: center;
+
+	background-color: var(--main-sc-color);
+	
+	border-bottom-left-radius: 50% 20%;
+	border-bottom-right-radius: 50% 20%;
+}
+
+.title{
+	display:flex;
+	background-color:var(--main-text-color);
+	color:var(--main-bg-color);
+	margin-top:0;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	z-index:4;
+	box-sizing:border-box;
+	padding-top:max(90px,9vh);
+	min-height:130px;
+	max-height:13vh;
+	width:100%;
+	position:absolute;
+}
+
+
+.logo {
+	display: block;
+}
+
+
+.logo img {
+	width: var(--image-md);
+}
+
+footer{
+	display:flex;
+	flex-direction:row;
+	text-align:center;
+	background-color: var(--main-sc-color);
+	justify-content: space-evenly;
+	align-items: center;
+	color: var(--main-text-color);
+	position:absolute;
+	top:100%;
+	bottom:0%;
+	min-height:80px;
+	max-height:5vh;
+	width:100%;
+	z-index:4;
+	margin-top:auto;
+}
+
+.foot-text:hover, .foot-text:active, .foot-text{
+	color: var(--main-text-color);
+	text-decoration:double;
+	line-height:0.1em;
+}
+
+#circle{
+	position:absolute;
+	pointer-events:none;
+	display:block;
+	margin:0;
+	padding:0;
+	height:100vh;
+	width:100vw;
+	z-index:100;
+	height:64px;
+	width:64px;
+	transform-origin: 50% 50%;
+	opacity:0;
+	overflow:none;
+}
+
+.card{
+	display:flex;
+    position:absolute;
+	flex-direction:column;
+	border-radius:5%;
+	background-color:var(--main-text-color);
+	color:var(--main-bg-color);
+	font-weight:bold;
+	font-size:2em;
+	text-align:center;
+	box-sizing:border-box;
+	padding:1em;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+	max-height:600px;
+	max-width:1200px;
+	justify-content:space-evenly;
+}
+
+.qr{
+	width:8em;
+	height:8em;
+	margin:auto;
+	margin-bottom:var(--space-sm);
+	margin-top:var(--space-sm);
+}
+
+.map{
+    height:600px;
+    width:100%;
+    background:url("../img/map-preload.png");
+    background-position:center;
+    background-size:cover;
+    overflow:hidden;
+}
+
+
+.camera-error{
+	display:flex;
+    position:fixed;
+	flex-direction:column;
+    text-align:center;
+    left:50%;
+    transform: translate(-50%, 0);
+    top:40vh;
+	line-height:1.5em;
+}

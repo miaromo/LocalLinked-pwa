@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://use.typekit.net/kfc6wxi.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--main-bg-color:#FFF5E8;
+	--main-text-color:#2e3105;
+	--main-sc-color:#B8BC7F;
+
+    --space-unit: 1em;
+    --space-xxs:  calc(0.25 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit));
+    --space-sm:   calc(0.75 * var(--space-unit));
+    --space-md:   calc(1.25 * var(--space-unit));
+    --space-lg:   calc(2 * var(--space-unit));
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+
+	
+    --font-primary: Shrikhand;
+    --font-secondary: Montserrat;
+
+    /* set base values */
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.2;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+
+    --image-unit: 4em;
+    --image-xxs:  calc(0.25 * var(--image-unit));
+    --image-xs:   calc(0.5 * var(--image-unit));
+    --image-sm:   calc(0.75 * var(--image-unit));
+    --image-md:   calc(1.25 * var(--image-unit));
+    --image-lg:   calc(2 * var(--image-unit));
+    --image-xl:   calc(3.25 * var(--image-unit));
+    --image-xxl:  calc(5.25 * var(--image-unit));
+}

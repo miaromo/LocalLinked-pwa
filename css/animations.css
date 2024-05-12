@@ -1,0 +1,18 @@
+.animate{
+	display:block;
+	animation: grow 20s ease-out infinite;
+}
+
+@keyframes grow {
+	0%{
+		transform:scale(0%,0%);
+		opacity:1;
+	}
+	8% {
+		transform:scale(8000%,8000%);
+		opacity:0;
+	}
+    100%{
+		opacity:0;
+    }
+}
