@@ -42,7 +42,6 @@
 	flex-direction:column;
 	width:0vw;
 	flex-grow:1;
-
 }
 
 .active{
@@ -73,13 +72,20 @@ html, body {
 	min-height:480px;
 	cursor: auto;
 	overflow: hidden; /* Hide scrollbars */
+	max-height:100vh;
 }
 
 .container {
 	display:flex;
 	flex-direction:column;
 	height:2000px;
-	max-height:100vh;
+	overflow-y:scroll;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 @media all and (max-width: 768px) {

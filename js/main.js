@@ -34,14 +34,17 @@ function toTitleCase(word) {
  }
 
  function stopAnimate() {
-    var element = document.getElementById("circle");
+    if(document.getElementById("circle") != null){
+        var element = document.getElementById("circle");
         var scaleX = element.getBoundingClientRect().width / element.offsetWidth;
-        console.log(scaleX);
-        console.log(element);
         if(scaleX > 70) {
             element.parentNode.removeChild(element);
         }
-    ani = document.getElementsByClassName("animate");
+        ani = document.getElementsByClassName("animate");
+    }
+    while (true){
+        stopAnimate();
+    }
     // while(ani[0]){
     //     var element = document.getElementById("circle");
     //     var scaleX = element.getBoundingClientRect().width / element.offsetWidth;
