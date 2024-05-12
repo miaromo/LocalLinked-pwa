@@ -66,6 +66,23 @@ footer{
 	margin-top:auto;
 }
 
+@media screen and (max-height:600px) {
+    header{
+        min-height:45px;
+        max-height:5vh;
+    }
+    .title{
+        min-height:65px;
+        max-height:6.5vh;
+        padding-top:max(45px,4.5vh);
+    }
+    footer{
+        min-height:40px;
+        max-height:2.5vh;
+        font-size:var(--text-sm);
+    }
+}
+
 .foot-text:hover, .foot-text:active, .foot-text{
 	color: var(--main-text-color);
 	text-decoration:double;
@@ -150,7 +167,7 @@ footer{
 
 @media screen and (max-height:640px) and (min-height:0px) {
 	.map{
-        height:15vh;
+        height:30vh;
     }
 }
 

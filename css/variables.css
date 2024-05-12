@@ -20,6 +20,7 @@
     --font-primary: Shrikhand;
     --font-secondary: Montserrat;
 
+    --browser-scale:1;
     /* set base values */
     --text-base-size: 1em;
     --text-scale-ratio: 1.2;
@@ -72,6 +73,14 @@
 }
 
 @media screen and (max-height: 480px) {
+    :root{
+        --text-base-size: 0.75em;
+        --space-unit: 0.5em;
+        --image-unit: 2em;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
     :root{
         --text-base-size: 0.75em;
         --space-unit: 0.5em;

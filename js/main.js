@@ -1,4 +1,6 @@
 function changePage(page) {
+    var browserZoomLevel = Math.round(window.devicePixelRatio);
+
     console.log(page);
     animateCircle();
     
@@ -42,6 +44,8 @@ function animateCircle(){
 }
 
 function findAnims(){
+    r.style.setProperty('--browser-scale', window.devicePixelRatio);
+
     var elements = document.getElementsByClassName("animate");
     elearray = Array.from(elements)
     elearray.forEach(stopCircle);
@@ -63,3 +67,6 @@ $(document).mousemove(function(e) {
 });
 
 setInterval(findAnims, 100);
+
+var r = document.querySelector(':root');
+r.style.setProperty('--browser-scale', window.devicePixelRatio);

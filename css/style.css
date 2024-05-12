@@ -41,6 +41,12 @@ body {
 	margin-top:max(130px,13vh);
 }
 
+@media screen and (max-height:600px) {
+    .pages{
+        margin-top:max(65px,6.5vh);
+    }
+}
+
 .page{
 	display:none;
 	opacity:0;
