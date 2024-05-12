@@ -69,7 +69,7 @@
 		<h1>LocalLinked</h1>
 	</header>
 	<div class="title">
-		<h1 id="title">Map</h1>
+		<h1 id="title">Main</h1>
 	</div>
 	<div class="pages">
 		<div class="page active" id="main-page">
@@ -92,7 +92,7 @@
 			</section>
 		</div>
 		<div class="page account-page" id="account-page">
-			<section class="container">
+			<section class="container" id="main-page">
 				<div class="account-display">
 					<h2>Account Display</h2>
 				</div>
@@ -114,6 +114,92 @@
 				</div>
 				<section class="business-list">
 					<h1>Business List</h1>
+					<table id="business-list" onclick="changePage('error-page')">
+						<tr>
+							<th>Business</th>
+							<th>Location</th>
+						</tr>
+						<tr>
+							<td>
+								Spark Community Space
+							</td>
+							<td>
+								The Pompey Centre
+							</td>
+						</tr>
+						<tr>
+							<td>
+								The Club House
+							</td>
+							<td>
+								Clarence Esplanade
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sweet Tooth Southsea
+							</td>
+							<td>
+								Albert Rd
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Natty's Jerk
+							</td>
+							<td>
+								Commercial Rd
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Florio's D'Italia
+							</td>
+							<td>
+								High St
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Bored of Southsea
+							</td>
+							<td>
+								Albert Rd
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Hunter Gatherer
+							</td>
+							<td>
+								Albert Rd
+							</td>
+						</tr>
+						<tr>
+							<td>
+								The Tenth Hole
+							</td>
+							<td>
+								Eastern Parade
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Southsea Coffee
+							</td>
+							<td>
+								Osborne Rd
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Bay Coffee
+							</td>
+							<td>
+								Clarendon Rd
+							</td>
+						</tr>
+					</table>
 				</section>
 		   </section>
 		</div>
@@ -135,7 +221,15 @@
 		</div>
 		<div class="page life-page" id="life-page">
 			<section class="container">
-				
+				Lifestyle
+			</section>
+		</div>
+		<div class="page error-page" id="error-page">
+			<section class="container">
+				<div class="camera-error">
+					<i class="fa-solid fa-warning"></i>
+					Server could not be reached.
+				</div>
 			</section>
 		</div>
 	</div>

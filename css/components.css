@@ -136,3 +136,27 @@ footer{
     top:40vh;
 	line-height:1.5em;
 }
+
+#business-list{
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    background-color:var(--main-sc-color);
+    border-radius:8px;
+    padding:var(--space-sm);
+    width:90%;
+    max-height:25%;
+    margin:auto;
+    left:50%;
+    transform:translate(-50%,0%);
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+table{
+    align-self:center;
+}
+td{
+    padding:0 var(--space-sm) 0 var(--space-sm);
+    line-height:var(--text-lg);
+}
