@@ -116,6 +116,21 @@ footer{
 	margin-top:var(--space-sm);
 }
 
+@media screen and (max-height:640px) and (min-height:0px) {
+	.qr{
+        width:4em;
+        height:4em;
+    }
+}
+
+@media screen and (max-height:960px) and (min-height:640px) {
+	.qr{
+        width:6em;
+        height:6em;
+    }
+}
+
+
 .map{
     height:40vh;
     width:100%;
@@ -123,6 +138,18 @@ footer{
     background-position:center;
     background-size:cover;
     overflow:hidden;
+}
+
+@media screen and (max-height:640px) and (min-height:0px) {
+	.map{
+        height:15vh;
+    }
+}
+
+@media screen and (max-height:720px) and (min-height:640px) {
+	.map{
+        height:30vh;
+    }
 }
 
 

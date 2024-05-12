@@ -68,6 +68,24 @@ body {
 	margin-top:20vh;
 }
 
+@media screen and (max-height:640px) and (min-height:0px) {
+	#main-page{
+		margin-top:5vh;
+	}
+}
+
+@media screen and (max-height:720px) and (min-height:640px) {
+	#main-page{
+		margin-top:10vh;
+	}
+}
+
+@media screen and (max-height:960px) and (min-height:720px) {
+	#main-page{
+		margin-top:15vh;
+	}
+}
+
 .container::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }

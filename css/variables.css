@@ -47,18 +47,34 @@
     --image-xxl:  calc(5.25 * var(--image-unit));
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width:180px) {
     :root{
         --text-base-size: 0.9em;
         --space-unit: 0.75em;
         --image-unit: 3em;
     }
-  }
+}
 
-  @media screen and (max-width: 180px) {
+@media screen and (max-width: 180px) {
     :root{
         --text-base-size: 0.75em;
         --space-unit: 0.5em;
         --image-unit: 2em;
     }
-  }
+}
+
+@media screen and (max-height: 720px) and (min-height:480px) {
+    :root{
+        --text-base-size: 0.9em;
+        --space-unit: 0.75em;
+        --image-unit: 3em;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    :root{
+        --text-base-size: 0.75em;
+        --space-unit: 0.5em;
+        --image-unit: 2em;
+    }
+}
