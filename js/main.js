@@ -1,7 +1,7 @@
 function changePage(page) {
     var browserZoomLevel = Math.round(window.devicePixelRatio);
 
-    console.log(page);
+    // console.log(page);
     animateCircle();
     
     var title = document.getElementById("title");
@@ -20,7 +20,7 @@ function changePage(page) {
         }
     })
     
-    console.log(elements);
+    // console.log(elements);
     
     var active = document.getElementById(page);
     active.classList.add("active");
@@ -55,7 +55,7 @@ function stopCircle(){
     element = document.getElementById("circle");
     if(element != null){
         var scaleX = element.getBoundingClientRect().width / element.offsetWidth;
-        console.log(scaleX);
+        // console.log(scaleX);
         if(scaleX > 50){
             element.parentNode.removeChild(element);
         }

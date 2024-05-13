@@ -153,26 +153,13 @@ footer{
 
 
 .map{
-    height:40vh;
+    height:30vh;
     width:100%;
     background:url("../img/map-preload.png");
     background-position:center;
     background-size:cover;
     overflow:hidden;
 }
-
-@media screen and (max-height:640px) and (min-height:0px) {
-	.map{
-        height:30vh;
-    }
-}
-
-@media screen and (max-height:720px) and (min-height:640px) {
-	.map{
-        height:30vh;
-    }
-}
-
 
 .camera-error{
 	display:flex;
