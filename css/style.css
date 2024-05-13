@@ -75,9 +75,9 @@ body {
     }
 }
 
-@media screen and (max-height:640px) {
+@media screen and (max-height:640px) and (min-height:600px) {
     .container{
-		height:max(80vh);
+		height:max(64vh);
     }
 }
 
