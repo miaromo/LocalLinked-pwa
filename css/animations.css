@@ -1,6 +1,6 @@
 .animate{
 	display:block;
-	animation: grow 20s ease-out infinite;
+	animation: grow 20s ease-out 1;
 }
 
 @keyframes grow {
@@ -15,4 +15,34 @@
     100%{
 		opacity:0;
     }
+}
+
+.appear{
+	animation: appear 1s ease-out 1;
+}
+
+@keyframes appear{
+	from{
+		display:none;
+		transform:scale(0%,0%);
+		opacity:0;
+	}
+	to{
+		display:flex;
+		transform:scale(100%,100%);
+		opacity:1;
+	}
+}
+@keyframes disappear{
+	from{
+		display:flex;
+		transform:scale(100%,100%);
+		opacity:1;
+		width:100vw;
+	}
+	to{
+		display:none;
+		transform:scale(0%,0%);
+		opacity:0;
+	}
 }
