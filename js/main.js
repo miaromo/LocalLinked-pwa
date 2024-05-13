@@ -56,7 +56,7 @@ function stopCircle(){
     if(element != null){
         var scaleX = element.getBoundingClientRect().width / element.offsetWidth;
         console.log(scaleX);
-        if(scaleX > 70){
+        if(scaleX > 50){
             element.parentNode.removeChild(element);
         }
     }

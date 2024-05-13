@@ -1,261 +1,240 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
- <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>LocalLinked</title>
-	<link rel="canonical" href="https://locallinked.co.uk" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Icons and Colors -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./img/sw/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/sw/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./img/sw/favicon-16x16.png">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="./img/sw/safari-pinned-tab.svg" color="#000000">
-	<link rel="shortcut icon" href="./favicon.ico">
-	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="msapplication-TileImage" content="./img/sw/mstile-144x144.png">
-	<meta name="msapplication-config" content="./browserconfig.xml">
-	<meta name="theme-color" content="#000000">
-	
-	<!-- SEO and Social Sharing and SEO -->
-	<meta name="description" content="LocalLinked" />
-	<meta name="robots" content="noodp" />
-	<meta name="author" content="Bingus Impact">
-	<meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app" />
-	<meta property="og:locale" content="en_GB" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="LocalLinked" />
-	<meta property="og:description" content="PWA for LocalLinked" />
-	<meta property="og:url" content="https://locallinked.co.uk" />
-	<meta property="og:site_name" content="LocalLinked" />
-	<meta property="section:publisher" content="https://www.instagram.com/locallinked/" />
-	<meta property="og:image" content="img/share.jpg" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="LocalLinked" />
-	<meta name="twitter:description" content="Simple Progressive Web App (PWA) template" />
-	<meta name="twitter:site" content="@simplepwa" />
-	<meta name="twitter:image" content="https://locallinked.co.uk/share.jpg" />
-	<meta name="twitter:creator" content="@locallinked" />
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>LocalLinked</title>
+   <link rel="canonical" href="https://locallinked.co.uk" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <!-- Icons and Colors -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./img/sw/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./img/sw/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./img/sw/favicon-16x16.png">
+   <link rel="manifest" href="manifest.json">
+   <link rel="mask-icon" href="./img/sw/safari-pinned-tab.svg" color="#000000">
+   <link rel="shortcut icon" href="./favicon.ico">
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="msapplication-TileImage" content="./img/sw/mstile-144x144.png">
+   <meta name="msapplication-config" content="./browserconfig.xml">
+   <meta name="theme-color" content="#000000">
+   
+   <!-- SEO and Social Sharing and SEO -->
+   <meta name="description" content="LocalLinked" />
+   <meta name="robots" content="noodp" />
+   <meta name="author" content="Bingus Impact">
+   <meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app" />
+   <meta property="og:locale" content="en_GB" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="LocalLinked" />
+   <meta property="og:description" content="PWA for LocalLinked" />
+   <meta property="og:url" content="https://locallinked.co.uk" />
+   <meta property="og:site_name" content="LocalLinked" />
+   <meta property="section:publisher" content="https://www.instagram.com/locallinked/" />
+   <meta property="og:image" content="img/share.jpg" />
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="LocalLinked" />
+   <meta name="twitter:description" content="Simple Progressive Web App (PWA) template" />
+   <meta name="twitter:site" content="@simplepwa" />
+   <meta name="twitter:image" content="https://locallinked.co.uk/share.jpg" />
+   <meta name="twitter:creator" content="@locallinked" />
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/components.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/base.css">
-	<script src="https://kit.fontawesome.com/e6dd138793.js" crossorigin="anonymous"></script>
-	
+   <!-- Styles -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/variables.css">
+   <link rel="stylesheet" href="css/components.css">
+   <link rel="stylesheet" href="css/animations.css">
+   <link rel="stylesheet" href="css/base.css">
+   <script src="https://kit.fontawesome.com/e6dd138793.js" crossorigin="anonymous"></script>
+   
 
-	<!-- Javscript -->
-	<script>
-		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", () => {
-				navigator.serviceWorker && navigator.serviceWorker.register("sw.js");
-			});
-		}
-	</script>
-	<script defer src="js/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- </head>
+   <!-- Javscript -->
+   <script>
+	   if ("serviceWorker" in navigator) {
+		   window.addEventListener("load", () => {
+			   navigator.serviceWorker && navigator.serviceWorker.register("sw.js");
+		   });
+	   }
+   </script>
+   <script defer src="js/main.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
- <body>
-	<header>
-		<a href="index.html" class="logo" aria-label="Logo">
-			<img src="img/logo.png" alt="Logo">
-		</a>
-		<h1>LocalLinked</h1>
-	</header>
-	<div class="title">
-		<h1 id="title">Main</h1>
-	</div>
-	<div class="pages">
-		<div class="page active" id="main-page">
-			<section class="container">
-				<div class="main-account">
-					<button onclick="changePage('account-page')"><h2>Account</h2></button>
-				</div>
-				<div class="main-search">
-					<button onclick="changePage('map-page')"><h2>Search</h2></button>
-				</div>
-				<div class="main-card">
-					<button onclick="changePage('card-page')"><h2>Card</h2></a>
-				</div>
-				<div class="main-scanner">
-					<button onclick="changePage('scan-page')"><h2>Scanner</h2></button>
-				</div>
-				<div class="main-lifestyle">
-					<button onclick="changePage('life-page')"><h2>Lifestyle</h2></button>
-				</div>
-			</section>
-		</div>
-		<div class="page account-page" id="account-page">
-			<section class="container" id="main-page">
-				<div class="account-display">
-					<h2>Account Display</h2>
-				</div>
-				<div class="account-name">
-					<h2>Name</h2>
-				</div>
-				<div class="account-email">
-					<h2>Email</h2>
-				</div>
-				<div class="account-points">
-					<h2>Points</h2>
-				</div>
-			</section>
-		</div>
-		<div class="page" id="map-page">
-		   <section class="container">
-				<div style="width: 100%" class="map">
-					<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Portsmouth+(LocalLinked)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-				</div>
-				<section class="business-list">
-					<h1>Business List</h1>
-					<table id="business-list" onclick="changePage('error-page')">
-						<tr>
-							<th>Business</th>
-							<th>Location</th>
-						</tr>
-						<tr>
-							<td>
-								Spark Community Space
-							</td>
-							<td>
-								The Pompey Centre
-							</td>
-						</tr>
-						<tr>
-							<td>
-								The Club House
-							</td>
-							<td>
-								Clarence Esplanade
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Sweet Tooth Southsea
-							</td>
-							<td>
-								Albert Rd
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Natty's Jerk
-							</td>
-							<td>
-								Commercial Rd
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Florio's D'Italia
-							</td>
-							<td>
-								High St
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Bored of Southsea
-							</td>
-							<td>
-								Albert Rd
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Hunter Gatherer
-							</td>
-							<td>
-								Albert Rd
-							</td>
-						</tr>
-						<tr>
-							<td>
-								The Tenth Hole
-							</td>
-							<td>
-								Eastern Parade
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Southsea Coffee
-							</td>
-							<td>
-								Osborne Rd
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Bay Coffee
-							</td>
-							<td>
-								Clarendon Rd
-							</td>
-						</tr>
-					</table>
-				</section>
+<body>
+   <header>
+	   <a href="index.html" class="logo" aria-label="Logo">
+		   <img src="img/logo.png" alt="Logo">
+	   </a>
+	   <h1>LocalLinked</h1>
+   </header>
+   <div class="title">
+	   <h1 id="title">Main</h1>
+   </div>
+   <div class="container pages">
+	   <div class="page active" id="main-page">
+		   <button onclick="changePage('account-page')"><h2>Account</h2></button>
+		   <button onclick="changePage('map-page')"><h2>Search</h2></button>
+		   <button onclick="changePage('card-page')"><h2>Card</h2></a>
+		   <button onclick="changePage('scan-page')"><h2>Scanner</h2></button>
+		   <button onclick="changePage('life-page')"><h2>Lifestyle</h2></button>
+	   </div>
+	   <div class="page account-page" id="account-page">
+		   <div class="account-display">
+			   <h2>Welcome, [Name]</h2>
+		   </div>
+		   <div class="account-info">
+			   Name: [Name]<br>
+			   Info: [Info]<br>
+			   Email: [Email]<br>
+		   </div>
+		   <div class="account-options">
+			   Edit Contact Details<br>
+			   Toggle Dark Mode<br>
+		   </div>
+		   <div class="account-points">
+			   <h2>Points</h2>
+		   </div>
+	   </div>
+	   <div class="page" id="map-page">
+		   <div style="width: 100%" class="map">
+			   <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Portsmouth+(LocalLinked)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+		   </div>
+		   <section class="business-list">
+			   <h1>Business List</h1>
+			   <table id="business-list" onclick="changePage('error-page')">
+				   <tr>
+					   <th>Business</th>
+					   <th>Location</th>
+				   </tr>
+				   <tr>
+					   <td>
+						   Spark Community Space
+					   </td>
+					   <td>
+						   The Pompey Centre
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   The Club House
+					   </td>
+					   <td>
+						   Clarence Esplanade
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Sweet Tooth Southsea
+					   </td>
+					   <td>
+						   Albert Rd
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Natty's Jerk
+					   </td>
+					   <td>
+						   Commercial Rd
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Florio's D'Italia
+					   </td>
+					   <td>
+						   High St
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Bored of Southsea
+					   </td>
+					   <td>
+						   Albert Rd
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Hunter Gatherer
+					   </td>
+					   <td>
+						   Albert Rd
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   The Tenth Hole
+					   </td>
+					   <td>
+						   Eastern Parade
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Southsea Coffee
+					   </td>
+					   <td>
+						   Osborne Rd
+					   </td>
+				   </tr>
+				   <tr>
+					   <td>
+						   Bay Coffee
+					   </td>
+					   <td>
+						   Clarendon Rd
+					   </td>
+				   </tr>
+			   </table>
 		   </section>
-		</div>
-		<div class="page card-page" id="card-page">
-			<section class="container">
-				<div class="card">
-					<img src="img/qr.png" class="qr">
-					Points: 0
-				</div>
-			</section>
-		</div>
-		<div class="page scan-page" id="scan-page">
-			<section class="container">
-				<div class="camera-error">
-					<i class="fa-solid fa-camera"></i>
-					Error 500: Camera Permission not Granted.
-				</div>
-			</section>
-		</div>
-		<div class="page life-page" id="life-page">
-			<section class="container">
-				Lifestyle
-			</section>
-		</div>
-		<div class="page error-page" id="error-page">
-			<section class="container">
-				<div class="camera-error">
-					<i class="fa-solid fa-warning"></i>
-					Server could not be reached.
-				</div>
-			</section>
-		</div>
-	</div>
+	   </div>
+	   <div class="page card-page" id="card-page">
+		   <div class="card">
+			   <img src="img/qr.png" class="qr">
+			   Points: 0
+		   </div>
+	   </div>
+	   <div class="page scan-page" id="scan-page">
+		   <div class="camera-error">
+			   <i class="fa-solid fa-camera"></i>
+			   Error 500: Camera Permission not Granted.
+		   </div>
+	   </div>
+	   <div class="page life-page" id="life-page">
+		   Lifestyle
+	   </div>
+	   <div class="page error-page" id="error-page">
+		   <div class="camera-error">
+			   <i class="fa-solid fa-warning"></i>
+			   Server could not be reached.
+		   </div>
+	   </div>
+   </div>
 
-	<footer>
-		<button onclick="changePage('main-page')">
-			<i class="fa-solid fa-home foot-text"></i>
-			<p class="foot-text">Home</p>
-		</button>
-		<button onclick="changePage('map-page')">
-			<i class="fa-solid fa-magnifying-glass-location foot-text"></i>
-			<p class="foot-text">Search</p>
-		</button>
-		<button onclick="changePage('card-page')">
-			<i class="fa-solid fa-address-card foot-text"></i>
-			<p class="foot-text">Card</p>
-		</button>
-		<button onclick="changePage('scan-page')">
-			<i class="fa-solid fa-qrcode foot-text"></i>
-			<p class="foot-text">Scanner</p>
-		</button>
-		<button onclick="changePage('life-page')">
-			<i class="fa-solid fa-heart foot-text"></i>
-			<p class="foot-text">Lifestyle</p>
-		</button>
-	</footer>
- </body>
+   <footer>
+	   <button onclick="changePage('main-page')">
+		   <i class="fa-solid fa-home foot-text"></i>
+		   <p class="foot-text">Home</p>
+	   </button>
+	   <button onclick="changePage('map-page')">
+		   <i class="fa-solid fa-magnifying-glass-location foot-text"></i>
+		   <p class="foot-text">Search</p>
+	   </button>
+	   <button onclick="changePage('card-page')">
+		   <i class="fa-solid fa-address-card foot-text"></i>
+		   <p class="foot-text">Card</p>
+	   </button>
+	   <button onclick="changePage('scan-page')">
+		   <i class="fa-solid fa-qrcode foot-text"></i>
+		   <p class="foot-text">Scanner</p>
+	   </button>
+	   <button onclick="changePage('life-page')">
+		   <i class="fa-solid fa-heart foot-text"></i>
+		   <p class="foot-text">Lifestyle</p>
+	   </button>
+   </footer>
+</body>
 
- </html>
+</html>

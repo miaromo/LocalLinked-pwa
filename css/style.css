@@ -31,28 +31,12 @@ body {
 }
 
 
-.pages{
-	display:flex;
-	flex-direction:row;
-	overflow-x:hidden;
-	margin:0;
-	padding:auto;
-	flex-grow:1;
-	margin-top:max(130px,13vh);
-}
-
-@media screen and (max-height:600px) {
-    .pages{
-        margin-top:max(65px,6.5vh);
-    }
-}
 
 .page{
 	display:none;
 	opacity:0;
 	flex-direction:column;
 	width:0vw;
-	flex-grow:1;
 }
 
 .active{
@@ -68,6 +52,21 @@ body {
 	overflow-x:hidden;
 	-ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+	display:flex;
+	flex-direction:row;
+	overflow-x:hidden;
+	margin:0;
+	padding:auto;
+	flex-grow:1;
+	margin-top:max(130px,13vh);
+	width:100vw;
+	height:fit-content;
+}
+
+@media screen and (max-height:600px) {
+    .container{
+        margin-top:max(65px,6.5vh);
+    }
 }
 
 #main-page{
