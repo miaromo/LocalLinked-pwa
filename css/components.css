@@ -180,7 +180,7 @@ footer{
 
 .camera-error{
 	display:flex;
-    position:fixed;
+    position:absolute;
 	flex-direction:column;
     text-align:center;
     left:50%;
@@ -192,7 +192,7 @@ footer{
 #business-list{
     display:flex;
     justify-content: center;
-    position:fixed;
+    position:absolute;
     background-color:var(--main-sc-color);
     border-radius:8px;
     padding:var(--space-sm);
