@@ -8,7 +8,7 @@ function changePage(page) {
 
     var newtitle = page.slice(0,-5);
     newtitle = toTitleCase(newtitle);
-    title.innerHTML = browserZoomLevel;
+    title.innerHTML = browserZoomLevel + " " + document.documentElement.clientHeight + " " + document.documentElement.clientWidth;
     newtitle = "LocalLinked - " + newtitle;
     document.title = newtitle;
     
