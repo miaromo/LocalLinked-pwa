@@ -42,9 +42,14 @@ body {
 
 .active{
 	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
 	animation: appear 0.1s ease-out 1;
 	opacity:1;
 	flex-grow:1;
+	width:100%;
+	height:100%;
+	margin:0;
 }
 
 .container {
@@ -59,9 +64,15 @@ body {
 	margin:0;
 	padding:auto;
 	margin-top:max(130px,13vh);
+	margin-bottom:max(80px,5vh);
 
 	width:100vw;
-	height:fit-content;
+	height:max(80vh);
+}
+@media screen and (max-height:720px) {
+    .container{
+		height:max(68vh);
+    }
 }
 
 @media screen and (max-height:600px) {
@@ -70,24 +81,6 @@ body {
     }
 }
 
-#main-page{
-	margin-top:20vh;
-}
-
-@media screen and (max-height:640px) and (min-height:0px) {
-	#main-page{
-		margin-top:5vh;
-	}
-}
-
-@media screen and (max-height:720px) and (min-height:640px) {
-	#main-page{
-		margin-top:10vh;
-	}
-}
-
-@media screen and (max-height:960px) and (min-height:720px) {
-	#main-page{
-		margin-top:15vh;
-	}
+#map-page{
+	justify-content:start;
 }
