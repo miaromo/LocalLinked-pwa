@@ -48,7 +48,7 @@
     --image-xxl:  calc(5.25 * var(--image-unit));
 }
 
-@media screen and (max-height: 720px) and (min-height:480px) {
+@media screen and (max-height: 800px) and (min-height:480px) {
     :root{
         --text-base-size: 0.9em;
         --space-unit: 0.75em;

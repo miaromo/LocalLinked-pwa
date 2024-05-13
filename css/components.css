@@ -66,7 +66,7 @@ footer{
 	margin-top:auto;
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:640px) {
     header{
         min-height:45px;
         max-height:5vh;

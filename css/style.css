@@ -69,15 +69,20 @@ body {
 	width:100vw;
 	height:max(80vh);
 }
-@media screen and (max-height:720px) and (min-height:640px) {
+@media screen and (max-height:800px) and (min-height:720px) {
     .container{
-		height:max(68vh);
+		height:500px;
+    }
+}
+@media screen and (max-height:800px) and (min-height:640px) {
+    .container{
+		height:max(calc(100vh - 210px));
     }
 }
 
 @media screen and (max-height:640px) and (min-height:600px) {
     .container{
-		height:max(64vh);
+		height:max(calc(100vh - 210px));
     }
 }
 
