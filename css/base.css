@@ -52,3 +52,5 @@ button:hover{
 button:active{
 	filter:brightness(200%);
 }
+
+::-webkit-scrollbar { display: none;}
